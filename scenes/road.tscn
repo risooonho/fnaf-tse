@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/layers/road_layer.png" type="Texture" id=1]
+[ext_resource path="res://interface/RoadLayer.gd" type="Script" id=2]
+
+[node name="RoadLayer" type="Sprite"]
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )
+
+[node name="RoadLayer2" type="Sprite" parent="."]
+position = Vector2( 982, 0 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="RoadLayer3" type="Sprite" parent="."]
+position = Vector2( 1966, 0 )
+texture = ExtResource( 1 )
+centered = false
+

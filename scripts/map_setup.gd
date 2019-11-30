@@ -1,0 +1,2 @@
+var hud
+var map

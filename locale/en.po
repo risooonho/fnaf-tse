@@ -1,0 +1,46 @@
+# Don't remove the two lines below, they're required for gettext to work correctly.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# MENU
+msgid "LABEL_LOADING"
+msgstr "Loading..."
+
+msgid "LABEL_NEWGAME"
+msgstr "New Game"
+
+msgid "LABEL_OPTIONS"
+msgstr "Options"
+
+msgid "LABEL_EXTRAS"
+msgstr "Extras"
+
+msgid "LABEL_QUIT"
+msgstr "Quit"
+
+msgid "VERSION"
+msgstr "Version"
+
+msgid "HINT_1"
+msgstr "Use W, A, S, D to move around there"
+
+msgid "HINT_2"
+msgstr "Or you can use the arrows"
+
+msgid "HINT_3"
+msgstr "If you have a controller, you can use it too"
+
+msgid "FOREST_FALLING_TREE"
+msgstr "A tree falls over you"
+
+# DIALOGUES
+msgid "DIALOGUE_UNKNOWN"
+msgstr "Unknown"

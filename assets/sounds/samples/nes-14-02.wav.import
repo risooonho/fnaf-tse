@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nes-14-02.wav-db30039ce1a3506a1d02897d021015a6.sample"
+
+[deps]
+
+source_file="res://assets/sounds/samples/nes-14-02.wav"
+dest_files=[ "res://.import/nes-14-02.wav-db30039ce1a3506a1d02897d021015a6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
