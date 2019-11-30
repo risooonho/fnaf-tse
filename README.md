@@ -13,7 +13,7 @@ The Silver Eyes is a lightweight game, you do not need a very powerful PC to run
 - At least 512 MB of RAM.
 - A mouse and keyboard or controller.
 
-If these requirements are ok for you, take a look at the __recommended__ requirements:
+If those requirements are okay, take a look at the __recommended__ requirements:
 
 - A powerfulest processor.
 - GPU compatible with GLES3, 1 GB of VRAM and shaders support.
