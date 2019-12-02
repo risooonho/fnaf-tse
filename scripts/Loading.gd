@@ -4,6 +4,7 @@ extends Node
 var thread = Thread.new()
 
 
+var path
 var total = 0
 
 const DELAY = 250
@@ -13,11 +14,11 @@ onready var Label = $Label
 
 
 func _ready():
-	thread.start(self, "_thread_load")
+	thread.start(self, "_thread_load", path)
 
 
-func _thread_load(userdata):
-	var ril = ResourceLoader.load_interactive("res://scenes/Game.tscn")
+func _thread_load(path):
+	var ril = ResourceLoader.load_interactive(path)
 	assert(ril)
 	
 	var res
