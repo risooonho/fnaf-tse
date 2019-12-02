@@ -1,8 +1,7 @@
 extends Node
 
 
-var thread
-var mutex
+var thread = Thread.new()
 
 
 var total = 0
@@ -14,9 +13,6 @@ onready var Label = $Label
 
 
 func _ready():
-	thread = Thread.new()
-	mutex = Mutex.new()
-	
 	thread.start(self, "_thread_load")
 
 
