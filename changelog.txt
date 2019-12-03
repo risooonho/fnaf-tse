@@ -1,2 +1,3 @@
+- Background loading
 - Arrange imports
 - Set up import default
