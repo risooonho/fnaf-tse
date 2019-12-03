@@ -1,2 +1,3 @@
+- Compress images
 - Arrange imports
 - Set up import default
