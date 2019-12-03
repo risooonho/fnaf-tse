@@ -39,22 +39,33 @@ _global_script_class_icons={
 [application]
 
 config/name="The Silver Eyes"
-run/main_scene="res://scenes/Game.tscn"
+run/main_scene="res://scenes/Menu.tscn"
 boot_splash/image="res://logo.png"
 boot_splash/bg_color=Color( 0.0392157, 0.0392157, 0.0392157, 1 )
 config/icon="res://icon.png"
 
-[autoload]
-
-core="*res://scripts/core.gd"
-
 [display]
 
 window/size/resizable=false
-window/size/test_width=1024
-window/size/test_height=600
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
+
+[importer_defaults]
+
+wav={
+"compress/mode": 1,
+"edit/loop": false,
+"edit/normalize": true,
+"edit/trim": true,
+"force/8_bit": true,
+"force/max_rate": true,
+"force/max_rate_hz": 44100,
+"force/mono": true
+}
+ogg_vorbis={
+"loop": false,
+"loop_offset": 0
+}
 
 [input]
 
