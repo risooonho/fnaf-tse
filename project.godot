@@ -49,6 +49,10 @@ config/icon="res://icon.png"
 Events="*res://scripts/Events.gd"
 SFX="*res://scripts/SFX.gd"
 
+[debug]
+
+gdscript/warnings/enable=false
+
 [display]
 
 window/size/resizable=false
