@@ -1,2 +1,0 @@
-var hud
-var map
