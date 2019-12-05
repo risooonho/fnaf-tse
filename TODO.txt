@@ -1,2 +1,0 @@
-- Push 'es-locale' branch
-
