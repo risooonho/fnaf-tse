@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/themes/default.tres" type="Theme" id=1]
 [ext_resource path="res://scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://scenes/NewGameButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/QuitButton.tscn" type="PackedScene" id=4]
 
 [node name="Menu" type="Control"]
 theme = ExtResource( 1 )
@@ -14,16 +16,10 @@ margin_bottom = 600.0
 custom_constants/separation = 32
 alignment = 1
 
-[node name="NewGame" type="Button" parent="HBox"]
-margin_top = 264.0
-margin_right = 294.0
-margin_bottom = 284.0
-text = "LABEL_TEXT"
-flat = true
+[node name="NewGame" parent="HBox" instance=ExtResource( 3 )]
+margin_top = 223.0
+margin_right = 324.0
+text = "LABEL_NEWGAME"
 
-[node name="Quit" type="Button" parent="HBox"]
-margin_top = 316.0
-margin_right = 294.0
-margin_bottom = 336.0
-text = "LABEL_QUIT"
-flat = true
+[node name="Quit" parent="HBox" instance=ExtResource( 4 )]
+margin_right = 324.0

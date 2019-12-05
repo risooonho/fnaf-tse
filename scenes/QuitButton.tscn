@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/QuitButton.gd" type="Script" id=1]
+
+[node name="Quit" type="Button"]
+margin_top = 316.0
+margin_right = 294.0
+margin_bottom = 377.0
+text = "LABEL_QUIT"
+flat = true
+script = ExtResource( 1 )
