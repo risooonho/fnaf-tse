@@ -16,4 +16,4 @@ func _on_NewGame_pressed():
 
 func _on_Quit_pressed():
 	if state == STATES.IDLE:
-		func()
+		get_tree().quit()
