@@ -13,8 +13,8 @@ script = ExtResource( 1 )
 position = Vector2( 880, 260 )
 
 [node name="Control" type="Control" parent="GUI"]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 1024.0
+margin_bottom = 600.0
 theme = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
