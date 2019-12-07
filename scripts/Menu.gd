@@ -20,6 +20,11 @@ func _on_NewGame_pressed():
 
 func _on_Quit_pressed():
 	if state == STATES.IDLE:
+		Events.emit_signal("selector_quit")
+		
+		var timer = get_tree().create_timer(0.5)
+		yield(timer, "timeout")
+		
 		get_tree().quit()
 
 

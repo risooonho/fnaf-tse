@@ -10,10 +10,16 @@ var s = 0
 
 func _ready():
 	Events.connect("select", self, "select")
+	Events.connect("selector_quit", self, "select_quit")
+	Particles.emitting = true
 
 
 func select(button):
 	global_position = button.rect_position + (button.rect_size / 2.0)
+
+
+func select_quit():
+	Line.color = Color.red
 
 
 func _process(delta):

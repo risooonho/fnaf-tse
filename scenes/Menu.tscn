@@ -17,8 +17,18 @@ margin_right = 1024.0
 margin_bottom = 600.0
 theme = ExtResource( 3 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="Title" type="RichTextLabel" parent="GUI/Control"]
+margin_right = 1020.0
+margin_bottom = 140.0
+bbcode_enabled = true
+bbcode_text = "Five Nights at Freddy's
+The Silver Eyes"
+text = "Five Nights at Freddy's
+The Silver Eyes"
 
 [node name="NewGame" type="Button" parent="GUI/Control"]
 margin_left = 700.0

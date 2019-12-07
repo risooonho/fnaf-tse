@@ -12,3 +12,5 @@ signal loading_requested(scene_path)
 
 # Menu
 signal select(button)
+
+signal selector_quit
