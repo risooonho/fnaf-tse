@@ -8,6 +8,14 @@ onready var Line = $Line
 var s = 0
 
 
+func _ready():
+	Events.connect("select", self, "select")
+
+
+func select(button):
+	global_position = button.rect_position + (button.rect_size / 2.0)
+
+
 func _process(delta):
 	s += delta
 	

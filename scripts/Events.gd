@@ -8,3 +8,7 @@ signal game_finished
 
 # Background loading
 signal loading_requested(scene_path)
+
+
+# Menu
+signal select(button)
