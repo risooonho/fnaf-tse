@@ -21,10 +21,10 @@ __meta__ = {
 }
 
 [node name="NewGame" type="Button" parent="GUI/Control"]
-margin_left = 730.0
+margin_left = 700.0
 margin_top = 223.0
-margin_right = 1054.0
-margin_bottom = 284.0
+margin_right = 1024.0
+margin_bottom = 287.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "LABEL_NEWGAME"
@@ -34,10 +34,10 @@ __meta__ = {
 }
 
 [node name="Quit" type="Button" parent="GUI/Control"]
-margin_left = 730.0
+margin_left = 700.0
 margin_top = 320.0
-margin_right = 1054.0
-margin_bottom = 381.0
+margin_right = 1024.0
+margin_bottom = 384.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "LABEL_QUIT"
