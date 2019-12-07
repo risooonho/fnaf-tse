@@ -25,10 +25,13 @@ __meta__ = {
 margin_right = 1020.0
 margin_bottom = 140.0
 bbcode_enabled = true
-bbcode_text = "Five Nights at Freddy's
-The Silver Eyes"
+bbcode_text = "[color=#ffffff]Five Nights at Freddy's
+The Silver Eyes[/color]"
 text = "Five Nights at Freddy's
 The Silver Eyes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="NewGame" type="Button" parent="GUI/Control"]
 margin_left = 700.0
