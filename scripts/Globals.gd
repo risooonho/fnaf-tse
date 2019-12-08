@@ -20,6 +20,15 @@ func _on_loading_requested(scene_path):
 		# Instance a new loading screen
 		var Loading = LOADING.instance()
 		Loading.path = scene_path
-		get_tree().change_scene_to(Loading)
+		
+		var curr = get_tree().root.get_child(0)
+		curr.queue_free()
+		
+		get_tree().root.add_child(Loading)
 		
 		# Just wait loading do the left process...
+		
+		yield(Loading, "finished")
+		
+		# Unlock game state
+		state = STATES.IDLE
