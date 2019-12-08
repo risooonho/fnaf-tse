@@ -23,17 +23,11 @@ _global_script_classes=[ {
 "class": "Item",
 "language": "GDScript",
 "path": "res://scripts/core/item.gd"
-}, {
-"base": "Node2D",
-"class": "Map",
-"language": "GDScript",
-"path": "res://scripts/map/Map.gd"
 } ]
 _global_script_class_icons={
 "Actor": "",
 "ControllableActor": "",
-"Item": "",
-"Map": ""
+"Item": ""
 }
 
 [application]
@@ -47,6 +41,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Events="*res://scripts/Events.gd"
+Globals="*res://scripts/Globals.gd"
 SFX="*res://scripts/SFX.gd"
 
 [debug]

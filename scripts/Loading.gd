@@ -45,7 +45,8 @@ func _thread_done(resource):
 	
 	thread.wait_to_finish()
 	
-	get_tree().call_deferred("change_scene_to", resource)
+	# Finish the work
+	Events.emit_signal("loading_finished", resource)
 
 
 func refresh(progress, total):

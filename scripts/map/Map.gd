@@ -1,5 +1,5 @@
-extends Node2D
+extends Node
 
-class_name Map
 
-var map_name = "default_map"
+func _ready():
+	print("Map loaded sucessfully")

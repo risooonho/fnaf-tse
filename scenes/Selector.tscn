@@ -30,9 +30,9 @@ color_ramp = SubResource( 2 )
 
 [node name="Line" type="ColorRect" parent="."]
 margin_left = -128.0
-margin_top = 20.0
+margin_top = 24.0
 margin_right = 128.0
-margin_bottom = 24.0
+margin_bottom = 28.0
 color = Color( 0.168627, 0.913725, 0.494118, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
