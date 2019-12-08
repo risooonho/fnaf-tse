@@ -1,6 +1,9 @@
 extends Node
 
 
+signal finished
+
+
 var thread = Thread.new()
 
 
@@ -45,6 +48,7 @@ func _thread_done(resource):
 	
 	thread.wait_to_finish()
 	
+	emit_signal("finished")
 	get_tree().call_deferred("change_scene_to", resource)
 
 
