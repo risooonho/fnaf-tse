@@ -15,7 +15,7 @@ func _ready():
 
 func _on_NewGame_pressed():
 	if state == STATES.IDLE:
-		pass
+		Events.emit_signal("loading_requested", "res://scenes/map/Map.tscn")
 
 
 func _on_Quit_pressed():
