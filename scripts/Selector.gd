@@ -8,6 +8,10 @@ onready var Line = $Line
 var s = 0
 
 
+var ramp1 = preload("res://assets/resources/ramp/ramp1.tres")
+var ramp2 = preload("res://assets/resources/ramp/ramp2.tres")
+
+
 func _ready():
 	Events.connect("select", self, "select")
 	Events.connect("selector_quit", self, "select_quit")
@@ -19,6 +23,7 @@ func select(button):
 
 
 func select_quit():
+	Particles.color_ramp = ramp2
 	Line.color = Color.red
 
 
