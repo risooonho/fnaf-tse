@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="MenuParallax" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
