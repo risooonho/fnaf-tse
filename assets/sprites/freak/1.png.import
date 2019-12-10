@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stand.png-79290b6c4e806adef89647e0f35a36ff.stex"
+path="res://.import/1.png-abb9b73bbe1df67884a6f03799e0e94f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/freak/stand.png"
-dest_files=[ "res://.import/stand.png-79290b6c4e806adef89647e0f35a36ff.stex" ]
+source_file="res://assets/sprites/freak/1.png"
+dest_files=[ "res://.import/1.png-abb9b73bbe1df67884a6f03799e0e94f.stex" ]
 
 [params]
 

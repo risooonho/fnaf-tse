@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/walk_01.png-f3d7cc34cb73d7905bd56aee4eee9fab.stex"
+path="res://.import/2.png-51c2e53bd03b88c5bcfbe721cd18e867.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/freak/walk_01.png"
-dest_files=[ "res://.import/walk_01.png-f3d7cc34cb73d7905bd56aee4eee9fab.stex" ]
+source_file="res://assets/sprites/freak/2.png"
+dest_files=[ "res://.import/2.png-51c2e53bd03b88c5bcfbe721cd18e867.stex" ]
 
 [params]
 
