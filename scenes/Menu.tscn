@@ -22,11 +22,11 @@ __meta__ = {
 }
 
 [node name="Title" type="RichTextLabel" parent="GUI/Control"]
-margin_right = 1020.0
+margin_right = 1024.0
 margin_bottom = 140.0
 bbcode_enabled = true
-bbcode_text = "[color=#ffffff]Five Nights at Freddy's
-The Silver Eyes[/color]"
+bbcode_text = "[center][color=#ffffff]Five Nights at Freddy's
+The Silver Eyes[/color][/center]"
 text = "Five Nights at Freddy's
 The Silver Eyes"
 __meta__ = {
