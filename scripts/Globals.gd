@@ -35,3 +35,13 @@ func _on_loading_requested(scene_path):
 		
 		# Unlock game state
 		state = STATES.IDLE
+
+
+func _input(event):
+	if event is InputEventKey:
+		if event.is_pressed():
+			if event.scancode == KEY_F4:
+				if has_node("Debug"):
+					get_node("Debug").queue_free()
+				else:
+					add_child(preload("res://scenes/Debug.tscn").instance())
