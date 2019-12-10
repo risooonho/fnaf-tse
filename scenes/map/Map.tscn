@@ -12,3 +12,6 @@ script = ExtResource( 1 )
 [node name="Cam" parent="Player" instance=ExtResource( 2 )]
 smoothing_enabled = true
 smoothing_speed = 2.5
+
+[node name="CollisionPolygon2D" type="Polygon2D" parent="."]
+polygon = PoolVector2Array( -89.0097, -66.7537, -120.655, 22.9088, -99.5582, 63.3448, -67.9126, 5.32785, -32.7509, -38.6243, 58.6697, -31.592, 81.5248, 24.6668, 120.203, -31.592, 78.0087, -63.2375 )

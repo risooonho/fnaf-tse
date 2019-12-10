@@ -1,7 +1,7 @@
 extends Area2D
 
 
-var speed = 10
+var speed = 32
 var direction = Vector2.ZERO
 
 var facing = Vector2.DOWN
