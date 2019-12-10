@@ -1,4 +1,4 @@
-extends Node
+extends Label
 
 
 var thread = Thread.new()
@@ -8,9 +8,6 @@ var path
 var total = 0
 
 const DELAY = 250
-
-
-onready var Label = $Label
 
 
 func _ready():
@@ -50,4 +47,4 @@ func _thread_done(resource):
 
 
 func refresh(progress, total):
-	Label.text = "Loading... " + str(round((progress / float(total)) * 100)) + "%"
+	text = "Loading... " + str(round((progress / float(total)) * 100)) + "%"
