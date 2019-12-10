@@ -17,10 +17,14 @@ func _process(delta):
 	
 	match direction:
 		Vector2.UP:
-			pass
+			Sprite.animation = "walk_up"
+			Sprite.scale.x = 1
 		Vector2.DOWN:
-			pass
+			Sprite.animation = "walk_down"
+			Sprite.scale.x = 1
 		Vector2.LEFT:
-			pass
+			Sprite.animation = "walk_side"
+			Sprite.scale.x = -1
 		Vector2.RIGHT:
-			pass
+			Sprite.animation = "walk_side"
+			Sprite.scale.x = 1

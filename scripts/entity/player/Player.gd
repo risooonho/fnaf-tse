@@ -1,19 +1,15 @@
 extends "res://scripts/entity/Entity.gd"
 
 
-#func _ready():
-#	pass
-
-
 func _unhandled_input(event):
 	if event.is_action_pressed("move_up"):
-		pass
+		direction = Vector2.UP
 	elif event.is_action_pressed("move_down"):
-		pass
+		direction = Vector2.DOWN
 	elif event.is_action_pressed("move_left"):
-		pass
+		direction = Vector2.LEFT
 	elif event.is_action_pressed("move_right"):
-		pass
+		direction = Vector2.RIGHT
 	elif event.is_action_released("move_up") or event.is_action_released("move_down") or event.is_action_released("move_left") or event.is_action_released("move_right"):
 		direction = Vector2.ZERO
 #	elif event.is_action_released("move_down"):
