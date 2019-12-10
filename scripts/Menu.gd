@@ -5,12 +5,15 @@ onready var NewGame = $GUI/Control/NewGame
 onready var Quit = $GUI/Control/Quit
 
 
+var new_game_target = "res://maps/forest/LeftForest.tscn"
+
+
 func _ready():
 	Events.emit_signal("select", NewGame)
 
 
 func _on_NewGame_pressed():
-	Events.emit_signal("loading_requested", "res://scenes/map/Map.tscn")
+	Events.emit_signal("loading_requested", new_game_target)
 
 
 func _on_Quit_pressed():
