@@ -2,10 +2,16 @@ extends Area2D
 
 
 var speed = 10
-var direction = Vector2.DOWN
+var direction = Vector2.ZERO
+
+var facing = Vector2.DOWN
 
 
 onready var Sprite = $Sprite
+
+
+enum STATES {IDLE, WALKING}
+var state = STATES.IDLE
 
 
 #func _ready():
@@ -28,3 +34,17 @@ func _process(delta):
 		Vector2.RIGHT:
 			Sprite.animation = "walk_side"
 			Sprite.scale.x = 1
+		Vector2.ZERO:
+			match facing:
+				Vector2.UP:
+					Sprite.animation = "idle_up"
+					Sprite.scale.x = 1
+				Vector2.DOWN:
+					Sprite.animation = "idle_down"
+					Sprite.scale.x = 1
+				Vector2.LEFT:
+					Sprite.animation = "idle_side"
+					Sprite.scale.x = -1
+				Vector2.RIGHT:
+					Sprite.animation = "idle_side"
+					Sprite.scale.x = 1

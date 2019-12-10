@@ -3,15 +3,25 @@ extends "res://scripts/entity/Entity.gd"
 
 func _unhandled_input(event):
 	if event.is_action_pressed("move_up"):
-		direction = Vector2.UP
+		state = STATES.WALKING
+		facing = Vector2.UP
+		direction = facing
 	elif event.is_action_pressed("move_down"):
-		direction = Vector2.DOWN
+		state = STATES.WALKING
+		facing = Vector2.DOWN
+		direction = facing
 	elif event.is_action_pressed("move_left"):
-		direction = Vector2.LEFT
+		state = STATES.WALKING
+		facing = Vector2.LEFT
+		direction = facing
 	elif event.is_action_pressed("move_right"):
-		direction = Vector2.RIGHT
+		state = STATES.WALKING
+		facing = Vector2.RIGHT
+		direction = facing
 	elif event.is_action_released("move_up") or event.is_action_released("move_down") or event.is_action_released("move_left") or event.is_action_released("move_right"):
-		direction = Vector2.ZERO
+		if state == STATES.WALKING:
+			state = STATES.IDLE
+			direction = Vector2.ZERO
 #	elif event.is_action_released("move_down"):
 #		pass
 #	elif event.is_action_released("move_left"):
