@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/02.png-9b215a7d908ae04f30725f56d1c7cccf.stex"
+path="res://.import/3.png-2f9b28839631aaea2d63a0fa166d2667.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/humans/carlton/walk_right/02.png"
-dest_files=[ "res://.import/02.png-9b215a7d908ae04f30725f56d1c7cccf.stex" ]
+source_file="res://assets/sprites/humans/carlton/walk_right/3.png"
+dest_files=[ "res://.import/3.png-2f9b28839631aaea2d63a0fa166d2667.stex" ]
 
 [params]
 
