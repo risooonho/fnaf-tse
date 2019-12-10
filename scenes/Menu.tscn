@@ -62,6 +62,19 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="About" type="Button" parent="GUI/Control"]
+margin_left = 700.0
+margin_top = 223.0
+margin_right = 1024.0
+margin_bottom = 287.0
+focus_mode = 0
+enabled_focus_mode = 0
+text = "LABEL_ABOUT"
+flat = true
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Quit" type="Button" parent="GUI/Control"]
 margin_left = 700.0
 margin_top = 320.0
@@ -80,5 +93,7 @@ __meta__ = {
 [node name="MenuCamera" parent="." instance=ExtResource( 6 )]
 [connection signal="mouse_entered" from="GUI/Control/NewGame" to="." method="_on_NewGame_mouse_entered"]
 [connection signal="pressed" from="GUI/Control/NewGame" to="." method="_on_NewGame_pressed"]
+[connection signal="mouse_entered" from="GUI/Control/About" to="." method="_on_NewGame_mouse_entered"]
+[connection signal="pressed" from="GUI/Control/About" to="." method="_on_About_pressed"]
 [connection signal="mouse_entered" from="GUI/Control/Quit" to="." method="_on_Quit_mouse_entered"]
 [connection signal="pressed" from="GUI/Control/Quit" to="." method="_on_Quit_pressed"]

@@ -16,6 +16,10 @@ func _on_NewGame_pressed():
 	Events.emit_signal("loading_requested", new_game_target)
 
 
+func _on_About_pressed():
+	Events.emit_signal("selector_about")
+
+
 func _on_Quit_pressed():
 	Events.emit_signal("selector_quit")
 		
