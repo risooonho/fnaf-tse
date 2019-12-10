@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/01.png-24ad55a9083bca891164b35b9d35e6c5.stex"
+path="res://.import/2.png-a747b8332030d8b69d11257b2f15c185.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/humans/charlle/walk_down/01.png"
-dest_files=[ "res://.import/01.png-24ad55a9083bca891164b35b9d35e6c5.stex" ]
+source_file="res://assets/sprites/humans/charlle/walk_down/2.png"
+dest_files=[ "res://.import/2.png-a747b8332030d8b69d11257b2f15c185.stex" ]
 
 [params]
 
