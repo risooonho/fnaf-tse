@@ -8,26 +8,9 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "KinematicBody2D",
-"class": "Actor",
-"language": "GDScript",
-"path": "res://scripts/actor/actor.gd"
-}, {
-"base": "",
-"class": "ControllableActor",
-"language": "GDScript",
-"path": "res://scripts/core/controllable_actor.gd"
-}, {
-"base": "Node",
-"class": "Item",
-"language": "GDScript",
-"path": "res://scripts/core/item.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"Actor": "",
-"ControllableActor": "",
-"Item": ""
+
 }
 
 [application]
