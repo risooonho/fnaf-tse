@@ -1,13 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/Debug.gd" type="Script" id=1]
+[ext_resource path="res://assets/themes/default.tres" type="Theme" id=2]
 
 [node name="Debug" type="CanvasLayer"]
 script = ExtResource( 1 )
 
 [node name="Text" type="RichTextLabel" parent="."]
-margin_right = 160.0
-margin_bottom = 80.0
+margin_top = 360.0
+margin_right = 560.0
+margin_bottom = 600.0
+theme = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "FPS: 0
 RAM: 0
@@ -20,5 +23,6 @@ __meta__ = {
 }
 
 [node name="Refresh" type="Timer" parent="."]
+wait_time = 5.0
 autostart = true
 [connection signal="timeout" from="Refresh" to="." method="_on_Refresh_timeout"]
