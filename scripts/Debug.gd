@@ -17,9 +17,10 @@ func _ready():
 	dict.CORES[0] = OS.get_processor_count()
 	refresh()
 	
-	var timer = get_tree().create_timer(1.0)
-	yield(timer, "timeout")
-	
+	get_tree().create_timer(1.0).connect("timeout", self, "_on_timer_timeout")
+
+
+func _on_timer_timeout():
 	Text.modulate.a = .5
 
 

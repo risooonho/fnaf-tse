@@ -10,9 +10,6 @@ enum STATES {IDLE, BUSY}
 var state = STATES.IDLE
 
 
-var Debug
-
-
 func _ready():
 	Events.connect("loading_requested", self, "_on_loading_requested")
 	Events.connect("selector_about", self, "_on_about_pressed")
@@ -56,8 +53,8 @@ func _input(event):
 	if event is InputEventKey:
 		if event.is_pressed():
 			if event.scancode == KEY_F4:
-				if Debug != null:
-					Debug.queue_free()
+				if has_node("Debug"):
+					get_node("Debug").queue_free()
 				else:
-					Debug = preload("res://scenes/Debug.tscn").instance()
+					var Debug = preload("res://scenes/Debug.tscn").instance()
 					add_child(Debug)
