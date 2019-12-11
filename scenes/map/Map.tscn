@@ -16,5 +16,3 @@ format = 1
 [node name="Player" parent="." instance=ExtResource( 3 )]
 
 [node name="Cam" parent="Player" instance=ExtResource( 2 )]
-smoothing_enabled = true
-smoothing_speed = 2.5
