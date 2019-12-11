@@ -16,3 +16,5 @@ signal select(button)
 
 signal selector_about
 signal selector_quit
+
+signal back

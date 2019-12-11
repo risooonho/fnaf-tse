@@ -1,6 +1,7 @@
 extends Node
 
 
+const MENU = preload("res://scenes/Menu.tscn")
 const LOADING = preload("res://scenes/Loading.tscn")
 const ABOUT = preload("res://scenes/About.tscn")
 
@@ -15,6 +16,7 @@ var Debug
 func _ready():
 	Events.connect("loading_requested", self, "_on_loading_requested")
 	Events.connect("selector_about", self, "_on_about_pressed")
+	Events.connect("back", self, "_on_back_pressed")
 
 
 func _on_loading_requested(scene_path):
@@ -44,6 +46,10 @@ func _on_loading_requested(scene_path):
 
 func _on_about_pressed():
 	get_tree().change_scene_to(ABOUT)
+
+
+func _on_back_pressed():
+	get_tree().change_scene_to(MENU)
 
 
 func _input(event):
