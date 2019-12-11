@@ -21,6 +21,9 @@ msgstr ""
 msgid "LABEL_QUIT"
 msgstr ""
 
+msgid "LABEL_BACK"
+msgstr ""
+
 msgid "VERSION"
 msgstr ""
 

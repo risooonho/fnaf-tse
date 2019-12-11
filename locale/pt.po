@@ -29,6 +29,9 @@ msgstr "Extras"
 msgid "LABEL_QUIT"
 msgstr "Sair"
 
+msgid "LABEL_BACK"
+msgstr "Voltar"
+
 msgid "VERSION"
 msgstr "Versão"
 
