@@ -26,6 +26,7 @@ config/icon="res://icon.png"
 Events="*res://scripts/Events.gd"
 Globals="*res://scripts/Globals.gd"
 SFX="*res://scripts/SFX.gd"
+Music="*res://scripts/Music.gd"
 
 [debug]
 
