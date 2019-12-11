@@ -20,6 +20,9 @@ msgstr ""
 msgid "LABEL_OPTIONS"
 msgstr ""
 
+msgid "LABEL_ABOUT"
+msgstr ""
+
 msgid "LABEL_EXTRAS"
 msgstr ""
 

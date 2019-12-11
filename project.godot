@@ -128,7 +128,7 @@ dev_options={
 
 [locale]
 
-translations=PoolStringArray( "res://locale/en.po", "res://locale/pt.po" )
+translations=PoolStringArray( "res://locale/en.po", "res://locale/pt.po", "res://locale/es.po" )
 
 [rendering]
 

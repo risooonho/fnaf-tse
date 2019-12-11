@@ -20,6 +20,9 @@ msgstr "New Game"
 msgid "LABEL_OPTIONS"
 msgstr "Options"
 
+msgid "LABEL_ABOUT"
+msgstr "About"
+
 msgid "LABEL_EXTRAS"
 msgstr "Extras"
 

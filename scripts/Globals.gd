@@ -2,6 +2,7 @@ extends Node
 
 
 const LOADING = preload("res://scenes/Loading.tscn")
+const ABOUT = preload("res://scenes/About.tscn")
 
 
 enum STATES {IDLE, BUSY}
@@ -13,6 +14,7 @@ var Debug
 
 func _ready():
 	Events.connect("loading_requested", self, "_on_loading_requested")
+	Events.connect("selector_about", self, "_on_about_pressed")
 
 
 func _on_loading_requested(scene_path):
@@ -38,6 +40,10 @@ func _on_loading_requested(scene_path):
 		
 		# Unlock game state
 		state = STATES.IDLE
+
+
+func _on_about_pressed():
+	get_tree().change_scene_to(ABOUT)
 
 
 func _input(event):

@@ -2,6 +2,7 @@ extends Node
 
 
 onready var NewGame = $GUI/Control/NewGame
+onready var About = $GUI/Control/About
 onready var Quit = $GUI/Control/Quit
 
 
@@ -31,6 +32,10 @@ func _on_Quit_pressed():
 
 func _on_NewGame_mouse_entered():
 	Events.emit_signal("select", NewGame)
+
+
+func _on_About_mouse_entered():
+	Events.emit_signal("select", About)
 
 
 func _on_Quit_mouse_entered():
