@@ -11,6 +11,7 @@ tile_data = PoolIntArray( -983048, 1, 0, -983047, 1, 0, -983046, 1, 0, -983045, 
 [node name="Cam" parent="Objects/Player" index="2"]
 limit_left = -128
 limit_top = -256
+limit_right = 912
 limit_bottom = 80
 
 [node name="BrokenCar" parent="Objects" index="1" instance=ExtResource( 2 )]
