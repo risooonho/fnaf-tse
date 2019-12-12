@@ -2,4 +2,6 @@ extends Node
 
 
 func _ready():
-	print("Map loaded sucessfully")
+	Events.emit_signal("game_entered")
+	
+	prints("Map loaded sucessfully:", name)

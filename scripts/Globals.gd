@@ -10,10 +10,29 @@ enum STATES {IDLE, BUSY}
 var state = STATES.IDLE
 
 
+var is_in_game = false
+
+
 func _ready():
 	Events.connect("loading_requested", self, "_on_loading_requested")
 	Events.connect("selector_about", self, "_on_about_pressed")
 	Events.connect("back", self, "_on_back_pressed")
+	Events.connect("selector_quit", self, "_on_quit_pressed")
+	
+	Events.connect("game_entered", self, "_on_game_entered")
+	Events.connect("game_exited", self, "_on_game_exited")
+
+
+func _on_game_entered():
+	is_in_game = true
+
+
+func _on_game_exited():
+	is_in_game = false
+
+
+func _on_quit_pressed():
+	get_tree().quit()
 
 
 func _on_loading_requested(scene_path):
