@@ -14,12 +14,17 @@ enum STATES {IDLE, WALKING}
 var state = STATES.IDLE
 
 
+var collider
+
+
 func _physics_process(delta):
 	var collision = move_and_collide(direction * speed * delta)
 	
 	if collision:
-		if collision.collider is Area2D:
-			print(collision.collider)
+		if collider == null:
+			collider = collision.collider
+	else:
+		collider = null
 	
 	match direction:
 		Vector2.UP:

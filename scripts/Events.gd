@@ -14,6 +14,18 @@ signal selector_quit
 
 signal back
 
+
 # In game state
 signal game_entered
 signal game_exited
+
+
+# Message objects
+signal message_object_requested(object)
+
+
+# Player
+signal player_started(player)
+
+signal enable_player_control
+signal disable_player_control

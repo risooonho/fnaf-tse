@@ -13,6 +13,9 @@ var state = STATES.IDLE
 var is_in_game = false
 
 
+var Player
+
+
 func _ready():
 	Events.connect("loading_requested", self, "_on_loading_requested")
 	Events.connect("selector_about", self, "_on_about_pressed")
@@ -21,6 +24,12 @@ func _ready():
 	
 	Events.connect("game_entered", self, "_on_game_entered")
 	Events.connect("game_exited", self, "_on_game_exited")
+	
+	Events.connect("player_started", self, "_on_player_started")
+
+
+func _on_player_started(player):
+	Player = player
 
 
 func _on_game_entered():
