@@ -69,11 +69,9 @@ func _on_back_pressed():
 
 
 func _input(event):
-	if event is InputEventKey:
-		if event.is_pressed():
-			if event.scancode == KEY_F4:
-				if has_node("Debug"):
-					get_node("Debug").queue_free()
-				else:
-					var Debug = preload("res://scenes/Debug.tscn").instance()
-					add_child(Debug)
+	if event.is_action_pressed("dev_options"):
+		if has_node("Debug"):
+			get_node("Debug").queue_free()
+		else:
+			var Debug = preload("res://scenes/Debug.tscn").instance()
+			add_child(Debug)
