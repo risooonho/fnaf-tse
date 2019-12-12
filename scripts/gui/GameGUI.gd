@@ -3,6 +3,9 @@ extends CanvasLayer
 
 var message_object
 
+var DialogueMessage = preload("res://scenes/DialogueMessage.tscn")
+var Message
+
 
 func _ready():
 	set_process_unhandled_input(false)
@@ -12,15 +15,22 @@ func _ready():
 
 
 func _on_message_object_requested(object):
-	set_process_unhandled_input(true)
-	get_tree().paused = true
-	
-	message_object = object
-	
-	print(message_object.message)
+	if Message == null:
+		set_process_unhandled_input(true)
+		get_tree().paused = true
+		
+		message_object = object
+		
+		Message = DialogueMessage.instance()
+		add_child(Message)
+		
+		Message.reset()
+		Message.buff_text(message_object.message, 0.1)
+		Message.set_state(Message.STATE_OUTPUT)
 
 
 func _on_message_object_accepted(object):
+	Message.get_node("Anim").play("hide")
 	set_process_unhandled_input(false)
 	get_tree().paused = false
 
