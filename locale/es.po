@@ -50,3 +50,7 @@ msgstr ""
 # DIALOGUES
 msgid "DIALOGUE_UNKNOWN"
 msgstr ""
+
+# MESSAGES
+msgid "MESSAGE_BROKEN_CAR"
+msgstr ""

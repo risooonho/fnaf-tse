@@ -15,18 +15,22 @@ func _ready():
 
 
 func _on_message_object_requested(object):
-	if Message == null:
-		set_process_unhandled_input(true)
-		get_tree().paused = true
-		
-		message_object = object
-		
-		Message = DialogueMessage.instance()
-		add_child(Message)
-		
-		Message.reset()
-		Message.buff_text(message_object.message, 0.1)
-		Message.set_state(Message.STATE_OUTPUT)
+	Events.disconnect("message_object_requested", self, "_on_message_object_requested")
+	
+	get_tree().paused = true
+	
+	message_object = object
+	
+	Message = DialogueMessage.instance()
+	add_child(Message)
+	
+	Message.reset()
+	Message.buff_text(message_object.message, 0.1)
+	Message.set_state(Message.STATE_OUTPUT)
+	
+	yield(Message, "buff_end")
+	set_process_unhandled_input(true)
+	Events.connect("message_object_requested", self, "_on_message_object_requested")
 
 
 func _on_message_object_accepted(object):

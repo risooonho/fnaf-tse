@@ -50,3 +50,7 @@ msgstr "A tree falls over you"
 # DIALOGUES
 msgid "DIALOGUE_UNKNOWN"
 msgstr "Unknown"
+
+# MESSAGES
+msgid "MESSAGE_BROKEN_CAR"
+msgstr "You car has broken and it won't work for now..."
