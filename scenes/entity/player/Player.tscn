@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/resources/entity/player/SpriteFrames.tres" type="SpriteFrames" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7, 7 )
+extents = Vector2( 4, 4 )
 
 [node name="Player" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -15,5 +15,5 @@ frames = ExtResource( 3 )
 animation = "idle_down"
 
 [node name="Shape" parent="." index="1"]
-position = Vector2( 0, 12 )
+position = Vector2( 0, 16 )
 shape = SubResource( 1 )

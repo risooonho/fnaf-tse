@@ -13,6 +13,8 @@ tile_set = ExtResource( 4 )
 cell_size = Vector2( 16, 16 )
 format = 1
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
+[node name="Objects" type="YSort" parent="."]
 
-[node name="Cam" parent="Player" instance=ExtResource( 2 )]
+[node name="Player" parent="Objects" instance=ExtResource( 3 )]
+
+[node name="Cam" parent="Objects/Player" instance=ExtResource( 2 )]

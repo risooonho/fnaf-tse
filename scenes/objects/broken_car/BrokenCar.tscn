@@ -4,12 +4,9 @@
 [ext_resource path="res://assets/resources/ramp/smoke_ramp.tres" type="Gradient" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 36, 4 )
+extents = Vector2( 32, 4 )
 
-[node name="BrokenCar" type="Area2D"]
-__meta__ = {
-"_edit_lock_": true
-}
+[node name="BrokenCar" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 4, 4 )
@@ -36,3 +33,6 @@ __meta__ = {
 [node name="Shape" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 18 )
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}

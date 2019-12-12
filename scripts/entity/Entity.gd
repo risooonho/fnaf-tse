@@ -1,4 +1,4 @@
-extends Area2D
+extends KinematicBody2D
 
 
 var speed = 32
@@ -14,12 +14,12 @@ enum STATES {IDLE, WALKING}
 var state = STATES.IDLE
 
 
-#func _ready():
-#	pass
-
-
-func _process(delta):
-	translate(direction * speed * delta)
+func _physics_process(delta):
+	var collision = move_and_collide(direction * speed * delta)
+	
+	if collision:
+		if collision.collider is Area2D:
+			print(collision.collider)
 	
 	match direction:
 		Vector2.UP:
