@@ -1,6 +1,10 @@
 extends Node
 
 
+func _ready():
+	pause_mode = Node.PAUSE_MODE_PROCESS
+
+
 # Background loading
 signal loading_requested(scene_path)
 signal loading_finished(scene_resource)
@@ -22,6 +26,7 @@ signal game_exited
 
 # Message objects
 signal message_object_requested(object)
+signal message_object_accepted(object)
 
 
 # Player
