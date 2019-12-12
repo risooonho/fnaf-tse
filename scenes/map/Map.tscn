@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/map/Map.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Cam.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/entity/player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/tilesets/tileset.tres" type="TileSet" id=4]
+[ext_resource path="res://scenes/gui/GameGUI.tscn" type="PackedScene" id=5]
 
 [node name="Map" type="Node"]
 script = ExtResource( 1 )
@@ -18,3 +19,5 @@ format = 1
 [node name="Player" parent="Objects" instance=ExtResource( 3 )]
 
 [node name="Cam" parent="Objects/Player" instance=ExtResource( 2 )]
+
+[node name="GameGUI" parent="." instance=ExtResource( 5 )]
