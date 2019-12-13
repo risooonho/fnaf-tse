@@ -17,6 +17,8 @@ var Player
 
 
 func _ready():
+	pause_mode = Node.PAUSE_MODE_PROCESS
+	
 	Events.connect("loading_requested", self, "_on_loading_requested")
 	Events.connect("selector_about", self, "_on_about_pressed")
 	Events.connect("back", self, "_on_back_pressed")

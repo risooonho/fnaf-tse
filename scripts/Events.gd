@@ -5,6 +5,10 @@ func _ready():
 	pause_mode = Node.PAUSE_MODE_PROCESS
 
 
+# SFX
+signal play_audio(path, bus, volume, ignore_same)
+
+
 # Background loading
 signal loading_requested(scene_path)
 signal loading_finished(scene_resource)
