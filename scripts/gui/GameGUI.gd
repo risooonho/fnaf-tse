@@ -18,7 +18,6 @@ func _ready():
 func _on_message_object_requested(object):
 	# Initialize
 	Events.disconnect("message_object_requested", self, "_on_message_object_requested")
-	set_process_unhandled_input(true)
 	get_tree().paused = true
 	finished_message = false
 	message_object = object
@@ -27,6 +26,7 @@ func _on_message_object_requested(object):
 	Message = DialogueMessage.instance()
 	add_child(Message)
 	
+	set_process_unhandled_input(true)
 	Message.reset()
 	Message.buff_text(message_object.message, 0.1)
 	Message.set_state(Message.STATE_OUTPUT)
