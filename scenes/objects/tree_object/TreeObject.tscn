@@ -4,6 +4,7 @@
 [ext_resource path="res://assets/sprites/trees/tree_01.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 4 )
 
 [node name="TreeObject" index="0" instance=ExtResource( 1 )]
 
@@ -11,6 +12,10 @@
 scale = Vector2( 4, 4 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, -10 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Shape" parent="." index="1"]
+position = Vector2( 0, 4 )
 shape = SubResource( 1 )
