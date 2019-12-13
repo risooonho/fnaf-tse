@@ -1,6 +1,14 @@
 extends "res://scripts/entity/Entity.gd"
 
 
+func _ready():
+	Events.connect("message_object_accepted", self, "_on_message_object_accepted")
+
+
+func _on_message_object_accepted(object):
+	direction = Vector2.ZERO
+
+
 func _unhandled_input(event):
 	if event.is_action_pressed("move_up"):
 		state = STATES.WALKING

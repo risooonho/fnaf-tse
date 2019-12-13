@@ -38,18 +38,19 @@ func _on_message_object_requested(object):
 
 
 func _on_message_object_accepted(object):
+	get_tree().paused = false
 	Message.get_node("Anim").play("hide")
 	set_process_unhandled_input(false)
-	get_tree().paused = false
 
 
 func _unhandled_input(event):
 	if event.is_action_pressed("use"):
+		get_tree().set_input_as_handled()
 		if finished_message:
-			get_tree().set_input_as_handled()
 			Events.emit_signal("message_object_accepted", message_object)
 		else:
 			Message.set_buff_speed(0.02)
 	elif event.is_action_released("use"):
 		if !finished_message:
+			get_tree().set_input_as_handled()
 			Message.set_buff_speed(0.1)
