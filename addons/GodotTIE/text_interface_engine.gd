@@ -228,6 +228,7 @@ func _physics_process(delta):
 				if(_output_delay > _output_delay_limit):
 					if(AUTO_SKIP_WORDS and (o["buff_text"][0] == " " or _buff_beginning)):
 						_skip_word()
+					Events.emit_signal("play_audio", "res://assets/sounds/dialogue.wav", "Master", 0.25, true)
 					_label_print(o["buff_text"][0])
 					_buff_beginning = false
 					_output_delay -= _output_delay_limit

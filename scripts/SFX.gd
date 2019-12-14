@@ -5,6 +5,8 @@ var max_sounds = 8
 
 
 func _ready():
+	pause_mode = Node.PAUSE_MODE_PROCESS
+	
 	Events.connect("play_audio", self, "play")
 
 

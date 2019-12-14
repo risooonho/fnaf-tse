@@ -27,7 +27,6 @@ func _on_message_object_requested(object):
 	add_child(Message)
 	
 	set_process_unhandled_input(true)
-	Message.reset()
 	Message.buff_text(message_object.message, 0.1)
 	Message.set_state(Message.STATE_OUTPUT)
 	
@@ -51,6 +50,7 @@ func _unhandled_input(event):
 		else:
 			Message.set_buff_speed(0.02)
 	elif event.is_action_released("use"):
-		if !finished_message:
-			get_tree().set_input_as_handled()
-			Message.set_buff_speed(0.1)
+		if finished_message:
+			return
+		get_tree().set_input_as_handled()
+		Message.set_buff_speed(0.1)
