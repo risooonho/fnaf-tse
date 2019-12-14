@@ -8,6 +8,9 @@ var Message
 var finished_message = false
 
 
+var Inventory = preload("res://scenes/Inventory.tscn").instance()
+
+
 func _ready():
 	set_process_unhandled_input(false)
 	

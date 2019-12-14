@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scripts/gui/GameGUI.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Inventory.tscn" type="PackedScene" id=2]
 
 [node name="GameGUI" type="CanvasLayer"]
 pause_mode = 2
@@ -13,5 +14,8 @@ text = "Player
 LEVEL: 1
 XP: 0"
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="Inventory" parent="." instance=ExtResource( 2 )]
