@@ -38,3 +38,7 @@ signal player_started(player)
 
 signal enable_player_control
 signal disable_player_control
+
+
+# CollidingBodyEvent
+signal player_collision_body_event(player)
