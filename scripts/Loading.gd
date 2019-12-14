@@ -47,4 +47,4 @@ func _thread_done(resource):
 
 
 func refresh(progress, total):
-	text = "Loading... " + str(round((progress / float(total)) * 100)) + "%"
+	text = tr("LABEL_LOADING") + str(round((progress / float(total)) * 100)) + "%"
