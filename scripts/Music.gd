@@ -4,5 +4,5 @@ extends Node
 const MUSIC_STREAM = preload("res://scenes/MusicStream.tscn")
 
 
-func play():
+func play(path, bus = "Music"):
 	pass
